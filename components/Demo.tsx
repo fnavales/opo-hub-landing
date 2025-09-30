@@ -12,7 +12,7 @@ const FormField: React.FC<{ label: string; children: React.ReactNode; className?
 
 const Demo: React.FC = () => {
     return (
-        <section id="demo" className="py-20 bg-orange-50/50">
+        <section id="demo" className="py-20 bg-white">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
@@ -62,7 +62,7 @@ const Demo: React.FC = () => {
                             <div className="md:col-span-3 p-6 rounded-lg">
                                 <h3 className="text-xl font-bold text-slate-800 mb-4">Caso Práctico Generado</h3>
                                 <div className="space-y-4 text-slate-700 leading-relaxed text-sm">
-                                    <h4 className="font-bold text-teal-600 text-lg">Título: El castillo de la amistad</h4>
+                                    <h4 className="font-bold text-teal-500 text-lg">Título: El castillo de la amistad</h4>
                                     <p><strong className="text-slate-800">Edad:</strong> 4-5 años</p>
                                     <p><strong className="text-slate-800">Temática:</strong> Resolución de conflictos y trabajo cooperativo.</p>
 

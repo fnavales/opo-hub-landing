@@ -44,7 +44,9 @@ const Hero: React.FC = () => {
 
 
   return (
-    <section className="relative pt-32 pb-20 md:pt-48 md:pb-32 bg-orange-50/50">
+    <section 
+      className="pt-32 pb-20 md:pt-48 md:pb-32"
+    >
       <div className="container mx-auto px-6 text-center">
         <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight">
           Revoluciona tu oposición.

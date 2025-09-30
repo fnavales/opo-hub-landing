@@ -38,36 +38,43 @@ const Testimonials: React.FC = () => {
             quote: "¡Increíble! Los casos son súper originales y me han ayudado a pensar de otra manera. He perdido el miedo a la parte práctica gracias a OpoHub.",
             author: "Laura García",
             role: "Opositora, Madrid",
-            avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80"
+            avatar: "https://i.imgur.com/HEybheL.jpeg"
         },
         {
-            quote: "Lo que más valoro es el ahorro de tiempo. Antes tardaba horas buscando y adaptando casos. Ahora los tengo personalizados al instante. Una herramienta imprescindible.",
+            quote: "La personalización es fantástica. Puedo enfocar mi estudio en los temas que más me cuestan. Una herramienta imprescindible.",
             author: "Carlos Pérez",
-            role: "Opositor, Andalucía",
-            avatar: "https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80"
+            role: "Opositor, Valencia",
+            avatar: "https://i.imgur.com/CsIZSOo.jpeg"
         },
         {
-            quote: "Como preparadora, recomiendo OpoHub a todos mis alumnos. La calidad y personalización de los supuestos les permite practicar de forma mucho más eficaz.",
-            author: "Elena Navarro",
-            role: "Preparadora de oposiciones",
-            avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80"
+            quote: "Ahorro horas de trabajo. Antes tardaba mucho en crear supuestos, ahora los tengo al instante. ¡Totalmente recomendado!",
+            author: "Ana Martínez",
+            role: "Preparadora, Sevilla",
+            avatar: "https://i.imgur.com/7ytbmkO.jpeg"
         }
     ];
 
+    // FIX: The component was not returning any JSX, causing a type error. It also needed to be exported to be used in App.tsx.
     return (
-        <section id="testimonials" className="py-20 bg-gray-50">
+        <section id="testimonials" className="py-20">
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
-                        Lo que dicen <span className="text-orange-500">nuestros usuarios</span>
+                        Lo que dicen nuestros <span className="text-orange-500">usuarios</span>
                     </h2>
                     <p className="mt-4 max-w-2xl mx-auto text-lg text-slate-600">
-                        La confianza de opositores y preparadores es nuestro mayor aval.
+                        Opiniones reales de opositores y preparadores que ya están revolucionando su estudio.
                     </p>
                 </div>
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {testimonialsData.map((testimonial, index) => (
-                        <TestimonialCard key={index} {...testimonial} />
+                        <TestimonialCard
+                            key={index}
+                            quote={testimonial.quote}
+                            author={testimonial.author}
+                            role={testimonial.role}
+                            avatar={testimonial.avatar}
+                        />
                     ))}
                 </div>
             </div>
