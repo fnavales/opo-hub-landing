@@ -48,12 +48,12 @@ const CTA: React.FC = () => {
     };
 
     return (
-        <section id="cta" className="py-20 bg-teal-700 text-white">
+        <section id="cta" className="py-20 bg-teal-600 text-white">
             <div className="container mx-auto px-6 text-center">
                 <h2 className="text-3xl md:text-4xl font-extrabold">
                     Sé el primero en probar OpoHub
                 </h2>
-                <p className="mt-4 max-w-2xl mx-auto text-lg text-teal-100">
+                <p className="mt-4 max-w-2xl mx-auto text-lg text-white">
                     Únete a nuestra lista de espera y recibe acceso prioritario a la beta, además de contenido exclusivo para tu preparación y danos tu opinión.
                 </p>
                 
